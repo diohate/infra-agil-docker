@@ -1,0 +1,102 @@
+    1  docker run hello-world 
+    2  docker images
+    3  docker run apache2
+    4  docker search apache
+    5  docker pull httpd
+    6  docker ps 
+    7  docker ps -a 
+    8  docker rm trusting
+    9  docker rm trusting_cori
+   10  docker run hello-world
+   11  docke ps -a 
+   12  docker ps -a 
+   13  docker ps -aq
+   14  docker rm $(docker ps -aq)
+   15  docker ps -a
+   16  docker rmi hello-world
+   17  docker images
+   18  docker run -ti httpd 
+   19  docker rm $(docker ps -qa)
+   20  docker run -dti --name apache httpd 
+   21  docker ps
+   22  docker exec -ti apache bash
+   23  docker ps
+   24  docker inspect apache
+   25  docker inspect apache | grep IPAddress
+   26  curl 172.17.0.2
+   27  docker stop apache 
+   28  docker rm apache 
+   29  docker ps
+   30  docker run -dti --name apache -p 8080:80 httpd 
+   31  curl 127.0.0.1:8080
+   32  docker run -dti alpine sh
+   33  docker images 
+   34  docker ps -qa
+   35  docker ps
+   36  docker attach confident_lalande
+   37  docker ps
+   38  docker run -ti alpine sh
+   39  docker ps 
+   40  dockert attach 6760600756e4
+   41  docker attach 6760600756e4
+   42  docke ps]
+   43  docke ps
+   44  docker ps
+   45  vim teru.html
+   46  docker cp teru.html apache:/usr/local/apache2/htdocs/
+   47  docker ps
+   48  docker run -dti --name apache2 -p 8181:80 httpd 
+   49  docker cp teru.html apache2:/usr/local/apache2/htdocs/
+   50  docker ps
+   51  wget http://agilemanifesto.org/
+   52  ls
+   53  mkdir html
+   54  mv *.html html/
+   55  ls
+   56  docker pull mariadb
+   57  cd 
+   58  docker run -dti --name banco1 -p 33306:3306 -v banco:/var/lib/mysql -e MYSQL_ROOT_PASSWORD=devops -e MYSQL_USER=bruna -e MYSQL_PASSWORD=4linux -e MYSQL_DATABASE=infra_agil mariadb
+   59  apt-get install mysql-client 
+   60  mysql -h 127.0.0.1 -P 33306 -u bruna -p4linux infra_agil
+   61  docker ps
+   62  docker run -dti --name banco2 -p 33307:3306 -v banco:/var/lib/mysql -e MYSQL_ROOT_PASSWORD=devops -e MYSQL_USER=bruna -e MYSQL_PASSWORD=4linux -e MYSQL_DATABASE=infra_agil mariadb
+   63  mysql -h 127.0.0.1 -P 33307 -u bruna -p4linux infra_agil
+   64  docker rm -f $(docker ps -qa)
+   65  docker run -dti -p 8080:80 -v /root/html/:/usr/local/apache2/htdocs/ --name apache1 httpd
+   66  docker run -dti -p 8181:80 -v /root/html/:/usr/local/apache2/htdocs/ --name apache2 httpd
+   67  ls
+   68  ls html/
+   69  html 
+   70  cd html/
+   71  ls
+   72  cd ..
+   73  cd /home/vagrant/
+   74  ls
+   75  docker run -dti -p 8181:80 -v /home/vagrant/html/:/usr/local/apache2/htdocs/ --name apache2 httpd
+   76  docker rm -f $(docker ps -qa)
+   77  docker run -dti -p 8080:80 -v /home/vagrant/html/:/usr/local/apache2/htdocs/ --name apache1 httpd
+   78  docker run -dti -p 8181:80 -v /home/vagrant/html/:/usr/local/apache2/htdocs/ --name apache2 httpd
+   79  cd 
+   80  mkdir flask
+   81  cd flask/
+   82  ls
+   83  echo flask > requirements.txt
+   84  vim app.py
+   85  ls
+   86  apt-get install python3-flask
+   87  Dockerfile
+   88  python3 app.py
+   89  > Dockerfile
+   90  ls
+   91  python3 app.py
+   92  docker pull python:alpine
+   93  vim Dockerfile 
+   94  docker build -t flask:1 .
+   95  vim Dockerfile 
+   96  docker build -t flask:1 .
+   97  docker images
+   98  docker run -dti --name flask --rm -p 5000:5000 flask:1
+   99  docker ps
+  100  docker logs flask
+  101  history
+  102  history > log
